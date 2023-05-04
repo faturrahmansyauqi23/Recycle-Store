@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #d4e8d8;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.form-box {
+  width: 75%;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+}
+
+form {
+  border: 0px solid #f1f1f1;
+  padding: 90px;
+  border-radius: 15px;
+}
+
+input[type="text"],
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input[type="submit"] {
+  background: linear-gradient(to right, #d4e8d8, lightseagreen);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 0px;
+}
+
+h1 {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 30px;
+  margin-top: -30px;
+  text-align: center;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.form-box {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  padding: 10px;
+  width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-box {
+    width: 90%;
+    margin: 3% auto;
+    padding: 2px;
+  }
+
+  form {
+    padding: 50px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  input[type="text"],
+  input[type="file"],
+  textarea {
+    padding: 8px 12px;
+    margin: 4px 0;
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+}
