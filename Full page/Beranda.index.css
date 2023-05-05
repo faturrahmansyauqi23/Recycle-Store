@@ -1,0 +1,339 @@
+.beranda-background {
+  position: relative;
+  background-color: #edf4f7;
+  width: 100%;
+  height: 670px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+/* tombol kolom pencarian */
+.tombol-kolom-pencarian {
+  --input-text-color: #000000;
+  --input-bg-color: #283542;
+  --focus-input-bg-color: transparent;
+  --text-color: #949faa;
+  --active-color: #1b9bee;
+  --width-of-input: 345px;
+  --inline-padding-of-input: 0.5em;
+  --gap: 0.9rem;
+  left: 20px;
+  height: 50px;
+  top: 12px;
+}
+.tombol-kolom-pencarian {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: var(--width-of-input);
+  position: relative;
+  isolation: isolate;
+}
+.fancy-bg {
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  background: var(--input-bg-color);
+  border-radius: 30px;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+label {
+  width: 100%;
+  padding: 0.8em;
+  height: 40px;
+  padding-inline: var(--inline-padding-of-input);
+  display: flex;
+  align-items: center;
+}
+.search,
+.close-btn {
+  position: absolute;
+}
+.search {
+  fill: var(--text-color);
+  left: var(--inline-padding-of-input);
+}
+svg {
+  width: 17px;
+  display: block;
+}
+.close-btn {
+  border: none;
+  right: var(--inline-padding-of-input);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0.1em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--active-color);
+  opacity: 0;
+  visibility: hidden;
+}
+.input {
+  color: var(--input-text-color);
+  width: 100%;
+  margin-inline: min(2em, calc(var(--inline-padding-of-input) + var(--gap)));
+  background: none;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--text-color);
+}
+.input:focus ~ .fancy-bg {
+  border: 1px solid var(--active-color);
+  background: var(--focus-input-bg-color);
+}
+.input:focus ~ .search {
+  fill: var(--active-color);
+}
+.input:valid ~ .close-btn {
+  opacity: 1;
+  visibility: visible;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+.kolom-icon,
+#kolom-pencarian {
+  position: absolute;
+  box-sizing: border-box;
+}
+.selengkapnya {
+  top: 136px;
+  left: 270px;
+  font-size: var(--font-size-xs);
+  width: 85px;
+  opacity: 0.5;
+}
+.selengkapnya,
+.barang {
+  position: absolute;
+  line-height: 104%;
+  display: inline-block;
+  height: 15px;
+}
+.barang {
+  top: 136px;
+  left: 30px;
+  width: 57px;
+}
+.beranda-child1,
+.beranda-child1,
+.beranda-child1 {
+  top: 449px;
+  background-color: var(--color-lightblue);
+}
+.kolom-icon {
+  top: 600px;
+  left: -6px;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  width: 400px;
+  height: 89px;
+}
+.icon-chat,
+.icon-notifikasi {
+  position: absolute;
+  top: 612px;
+  left: 240px;
+  width: 33px;
+  height: 33px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.icon-chat {
+  top: 615px;
+  left: 145px;
+  width: 26px;
+  height: 26px;
+}
+.kotak1,
+.kotak3,
+.kotak4,
+.kotak2 {
+  position: absolute;
+  left: 52px;
+  border-radius: var(--br-xs);
+  width: 108px;
+  height: 90px;
+}
+.kotak1 {
+  top: 172px;
+  background-color: var(--color-lightblue);
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  padding: 0;
+}
+.kotak1 img {
+  display: block;
+  width: 100%;
+  height: 90px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.kotak1:hover img {
+  filter: brightness(90%);
+}
+
+.kotak3 {
+  top: 297px;
+  background-color: #f8c3dd;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  padding: 0;
+}
+.kotak3 img {
+  display: block;
+  width: 100%;
+  height: 90px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.kotak3:hover img {
+  filter: brightness(90%);
+}
+.kotak4,
+.kotak2 {
+  top: 172px;
+  left: 200px;
+  background-color: #ddc9e2;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  padding: 0;
+}
+.kotak2 img {
+  display: block;
+  width: 100%;
+  height: 90px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.kotak2:hover img {
+  filter: brightness(90%);
+}
+.kotak4 {
+  top: 297px;
+  background-color: #fef1ad;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  padding: 0;
+}
+.kotak4 img {
+  display: block;
+  width: 100%;
+  height: 90px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.kotak4:hover img {
+  filter: brightness(90%);
+}
+.icon-home {
+  position: absolute;
+  height: 3.13%;
+  width: 6.39%;
+  top: 615px;
+  right: 83.89%;
+  bottom: 3.88%;
+  left: 9.72%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.tombol-lainnya,
+.tombol-nonorganik,
+.tombol-organik {
+  position: absolute;
+  top: 68px;
+  border-radius: var(--br-5xs);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  height: 45px;
+}
+.tombol-lainnya {
+  left: 30px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-100);
+  box-sizing: border-box;
+  width: 45px;
+}
+.tombol-nonorganik,
+.tombol-organik {
+  width: 112px;
+}
+.tombol-nonorganik {
+  left: 245px;
+  background-color: #80beb1;
+  border: 1px solid var(--color-gray-100);
+  box-sizing: border-box;
+}
+.tombol-organik {
+  left: 105px;
+  background-color: #ffffff;
+  border: 1px solid var(--color-gray-100);
+}
+.icon-menulainnya {
+  position: absolute;
+  height: 2.63%;
+  width: 6.39%;
+  top: 12.25%;
+  right: 82.22%;
+  bottom: 87.38%;
+  left: 10.5%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.non-organik,
+.organik {
+  position: absolute;
+  top: 83px;
+  line-height: 104%;
+  display: inline-block;
+  height: 15px;
+}
+.organik {
+  left: 133px;
+  color: var(--color-black);
+  width: 55px;
+}
+.non-organik {
+  left: 256px;
+  width: 90px;
+}
+.icon-profil {
+  position: absolute;
+  height: 3.17%;
+  width: 6.67%;
+  top: 615px;
+  right: 8.06%;
+  bottom: 3.83%;
+  left: 85.28%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  cursor: pointer;
+}
