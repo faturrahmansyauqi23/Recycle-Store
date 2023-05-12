@@ -12,7 +12,7 @@ if (isset($_POST['masuk'])) {
   // Memeriksa apakah user ditemukan atau tidak
   if (mysqli_num_rows($result) > 0) {
     // Jika ditemukan, redirect ke halaman selanjutnya
-    header("Location: Beranda.html");
+    header("Location: Beranda_organik.html");
   } else {
     // Jika tidak ditemukan, tampilkan pesan error pada halaman login
     $error = "Nama pengguna atau kata sandi salah. Silakan coba lagi.";

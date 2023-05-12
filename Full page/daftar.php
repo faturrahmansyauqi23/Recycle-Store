@@ -12,3 +12,4 @@ if(mysqli_query($conn, $query_sql)){
 } else {
     echo "Pendaftaran Gagal :" . mysqli_error($conn);
 }
+

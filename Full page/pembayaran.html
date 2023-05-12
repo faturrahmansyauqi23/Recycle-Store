@@ -5,6 +5,28 @@
     <link rel="stylesheet" type="text/css" href="pembayaran.css" />
   </head>
   <body>
+    <div class="kolom-icon">
+      <button
+        class="icon-profil"
+        onclick="window.location.href='ProfilPembeli.html'"
+      >
+        <img class="icon-profil" alt="" src="./profile.svg" id="vectorIcon2" />
+      </button>
+      <button class="icon-notifikasi" onclick="window.location.href='#'">
+        <img
+          class="icon-notifikasi"
+          alt=""
+          src="./notification.png"
+          id="phbellIcon"
+        />
+      </button>
+      <button class="icon-chat" onclick="window.location.href='#'">
+        <img class="icon-chat" alt="" src="./chat.png" id="bichatDotsIcon" />
+      </button>
+      <button class="icon-home" onclick="window.location.href='/Beranda.html'">
+        <img class="icon-home" alt="" src="./home.svg" />
+      </button>
+    </div>
     <div class="container">
       <form>
         <h1>Pembayaran</h1>
@@ -15,7 +37,6 @@
           <option value="gopay">GoPay</option>
           <option value="transfer">Transfer Bank</option></select
         ><br /><br />
-
         <input type="submit" value="Bayar" />
         <a class="btn-kembali" href="product-detail.html">Kembali</a>
       </form>
