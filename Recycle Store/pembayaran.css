@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background-color: #edf4f7;
+  background-position: center;
+  overflow: hidden;
+}
+
+form {
+  width: 50%;
+  height: 60%;
+  position: relative;
+  margin: 4% auto;
+  margin-top: 150px;
+  background: #ffffff;
+  padding: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border-color: #80beb1;
+}
+
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+input[type="submit"] {
+  background-color: #80beb1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 15px;
+}
+
+input[type="submit"]:hover {
+  background-color: #5da496;
+}
+
+.btn-kembali {
+  width: 45%;
+  padding: 12px 20px;
+  margin-top: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #f44336;
+  color: white;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.btn-kembali:hover {
+  background-color: #d32f2f;
+}
+
+h1 {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 50px;
+  margin-top: -10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    width: 80%;
+    height: 50%;
+    margin-top: 150px;
+  }
+
+  select,
+  input[type="submit"] {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .btn-kembali {
+    width: 65%;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+

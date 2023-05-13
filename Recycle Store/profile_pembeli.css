@@ -1,0 +1,261 @@
+* {
+  margin: auto;
+  /* padding: auto; */
+}
+
+body {
+  background-color: rgb(245, 241, 241);
+}
+
+.container {
+  background-color: #d4eef9;
+  width: 370px;
+  height: 150px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 10px;
+  box-shadow: 0px 2px 8px;
+}
+
+.tulisan-profil {
+  position: relative;
+  left: 10px;
+  top: 5px;
+  font-weight: 1000;
+  font-size: x-large;
+  margin-right: 10px;
+}
+.tombol-kembali {
+  position: relative;
+  top: 8px;
+  left: 0px;
+  border: none;
+  transform: scale(150%);
+  background-color: #d4eff9;
+}
+.foto-profil {
+  background-color: #ffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.foto-profil i {
+  font-size: 4rem;
+  margin-left: 22px;
+  margin-top: 15px;
+}
+
+.nama {
+  display: grid;
+  margin-left: 35px;
+  text-align: left;
+}
+
+.petugas {
+  margin-left: 10px;
+}
+
+.no-petugas {
+  margin-left: 11px;
+}
+
+.pesanan-riwayat {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 17%;
+  margin-right: 17%;
+}
+
+.font {
+  display: flex;
+  margin-top: 1px;
+}
+
+.font h5 {
+  font-size: 1rem;
+  /* color: red;  */
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* margin-bottom: 10px; */
+}
+
+.button-row i {
+  font-size: 50px;
+}
+
+.button-container .logo i {
+  position: absolute;
+  justify-content: center;
+  top: 15px;
+  left: 10px;
+  bottom: 0;
+}
+
+.button-container .logo-minus i {
+  margin-left: 10px;
+}
+
+.button {
+  position: relative;
+  padding-left: 150px;
+  padding-right: 150px;
+  height: 40px;
+  margin: 0px;
+
+  border-radius: 9px;
+  border-width: 1px;
+  border-style: solid;
+
+  border-color: rgb(10, 10, 10);
+
+  margin-bottom: 5px;
+}
+
+.button1 {
+  position: relative;
+  text-align: left;
+  margin-top: 15px;
+  border-radius: 7px;
+  height: 40px;
+  width: 40%;
+  box-shadow: 10px 10px 10px lightgray;
+}
+
+.button2 {
+  position: relative;
+  margin-top: 90px;
+  border-width: 0;
+  border-radius: 10px;
+}
+
+.button2 i {
+  font-size: 25px;
+}
+
+.keluar {
+  font-size: 15px;
+}
+
+.button-custom {
+  /* position: absolute; */
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #edf4f7;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: transparent;
+  border: #000000 1px solid;
+}
+
+.button:hover {
+  background-color: #edf4f7;
+}
+
+.button-custom:hover {
+  background-color: #edf4f7;
+}
+
+.button1:hover {
+  background-color: #edf4f7;
+}
+
+.button2:hover {
+  background-color: #edf4f7;
+}
+
+.kolom-icon {
+  border-radius: 20px;
+  position: fixed;
+  top: 600px;
+  left: -6px;
+  background-color: white;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  width: 400px;
+  height: 100px;
+}
+.icon-chat,
+.icon-notifikasi {
+  position: fixed;
+  top: 617px;
+  left: 240px;
+  width: 33px;
+  height: 33px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.icon-notifikasi img {
+  transform: scale(100%);
+}
+.icon-chat {
+  position: fixed;
+  top: 618px;
+  left: 145px;
+  width: 26px;
+  height: 26px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.icon-chat img {
+  transform: scale(100%);
+}
+.icon-profil {
+  position: fixed;
+  height: 3.17%;
+  width: 8%;
+  top: 622px;
+  right: 8.06%;
+  bottom: 3.83%;
+  left: 85.28%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.icon-profil img {
+  transform: scale(170%);
+}
+.icon-home {
+  position: fixed;
+  height: 3.13%;
+  width: 6.39%;
+  top: 620px;
+  right: 83.89%;
+  bottom: 3.88%;
+  left: 9.72%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.icon-home img {
+  transform: scale(167%);
+}
