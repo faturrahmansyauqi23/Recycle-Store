@@ -1,0 +1,174 @@
+body {
+  background-color: #edf4f7;
+  overflow: hidden;
+}
+
+form {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 130px auto;
+  width: 50%;
+  border-radius: 10px;
+  border-color: #80beb1;
+}
+
+form table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+form th,
+form td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+form th {
+  background-color: #4caf50;
+  color: white;
+}
+
+form input[type="text"],
+form input[type="file"],
+form input[type="submit"],
+form input[type="button"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #5da496;
+}
+
+form input[type="submit"] {
+  background-color: #80beb1;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+form input[type="button"] {
+  background-color: #cc3838;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+input[type="button"]:hover {
+  background-color: #a32727;
+}
+
+h1 {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 30;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    margin: 40px auto;
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  form input[type="text"],
+  form input[type="file"],
+  form input[type="submit"],
+  form input[type="button"] {
+    font-size: 0.8rem;
+  }
+}
+
+.kolom-icon {
+  border-radius: 20px;
+  position: fixed;
+  top: 600px;
+  left: -6px;
+  background-color: white;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  width: 400px;
+  height: 100px;
+}
+.icon-chat,
+.icon-notifikasi {
+  position: fixed;
+  top: 617px;
+  left: 240px;
+  width: 33px;
+  height: 33px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.icon-notifikasi img {
+  transform: scale(100%);
+}
+.icon-chat {
+  position: fixed;
+  top: 618px;
+  left: 145px;
+  width: 26px;
+  height: 26px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.icon-chat img {
+  transform: scale(100%);
+}
+.icon-profil {
+  position: fixed;
+  height: 3.17%;
+  width: 8%;
+  top: 622px;
+  right: 8.06%;
+  bottom: 3.83%;
+  left: 85.28%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.icon-profil img {
+  transform: scale(170%);
+}
+.icon-home {
+  position: fixed;
+  height: 3.13%;
+  width: 6.39%;
+  top: 620px;
+  right: 83.89%;
+  bottom: 3.88%;
+  left: 9.72%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.icon-home img {
+  transform: scale(167%);
+}
+
+.tombol-kembali {
+  position: relative;
+  top: 8px;
+  left: 0px;
+  border: none;
+  transform: scale(130%);
+  background-color: #edf4f7;
+}
